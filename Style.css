@@ -1,0 +1,139 @@
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    color: hsl(245, 75%, 52%);
+}
+
+p {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.background img {
+    width: 100%;
+}
+
+.Card {
+    width: 450px;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.Card .illustration img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.order h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.order {
+    margin: 3rem 3rem 1.2rem;
+}
+
+.plan-section {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.price img {
+    margin-right: 21px;
+}
+
+.change {
+    transition: 0.2s ease;
+}
+
+.change:hover {
+    opacity: 60%;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    margin: 40px 40px 16px;
+    padding: 16px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px -1px hsl(245, 75%, 52%);
+    transition: 0.2s ease;
+}
+
+.payment:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.payment p {
+    color: white;
+    font-weight: 700;
+    display: grid;
+    justify-content: center;
+}
+
+.cancel {
+    margin: 29px 32px 32px;
+}
+
+.cancel p {
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.cancel p:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+    opacity: 80%;
+}
+.attribution {
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+}
